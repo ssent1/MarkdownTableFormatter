@@ -1,6 +1,6 @@
 [
 	{
-		"caption": "Markdown Table Formatter: Format Table",
-		"command": "markdown_table_format"
+		"caption": "tableMD: Format Table",
+		"command": "tablemd_format"
     }
 ]

@@ -11,11 +11,11 @@ from .simple_markdown import table
 log = logging.getLogger(__name__)
 
 
-class MarkdownTableFormatCommand(sublime_plugin.TextCommand):
+class tableMDCommand(sublime_plugin.TextCommand):
     def run(self, edit, format_all=False):
         logging.basicConfig(level=logging.DEBUG)
         settings = \
-            sublime.load_settings("MarkdownTableFormatter.sublime-settings")
+            sublime.load_settings("tableMD.sublime-settings")
         verbose = settings.get("verbose")
         margin = settings.get("margin")
         padding = settings.get("padding")
@@ -82,14 +82,14 @@ class MarkdownTableFormatCommand(sublime_plugin.TextCommand):
                 self.view.sel().add(cursor)
 
 
-class MarkdownTableFormatterListener(sublime_plugin.EventListener):
+class tableMDListener(sublime_plugin.EventListener):
     def on_pre_save(self, view):
         # restrict to markdown files
         if view.score_selector(0, "text.html.markdown") == 0:
             return
 
         settings = \
-            sublime.load_settings("MarkdownTableFormatter.sublime-settings")
+            sublime.load_settings("tableMD.sublime-settings")
         if not settings.get("autoformat_on_save"):
             return
-        view.run_command("markdown_table_format", {"format_all": True})
+        view.run_command("tablemd_format", {"format_all": True})

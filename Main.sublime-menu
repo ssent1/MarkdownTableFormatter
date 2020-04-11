@@ -6,8 +6,8 @@
 				"children":
 				[
 					{
-						"caption": "Markdown Table Formatter",
-						"command": "markdown_table_format"
+						"caption": "tableMD",
+						"command": "tablemd_format"
 					}
 				]
 		},
@@ -24,39 +24,39 @@
 							"children":
 							[
 									{
-											"caption": "Markdown Table Formatter",
+											"caption": "tableMD",
 											"children":
 											[
 													{
 														"command": "edit_settings",
-														"args": { "base_file": "${packages}/Markdown Table Formatter/MarkdownTableFormatter.sublime-settings" },
+														"args": { "base_file": "${packages}/tableMD/tableMD.sublime-settings" },
 														"caption": "Settings"
 													},
 													{ "caption": "-" },
 													{
 														"command": "open_file",
 														"args": {
-																"file": "${packages}/Markdown Table Formatter/Default (OSX).sublime-keymap",
+																"file": "${packages}/tableMD/Default (OSX).sublime-keymap",
 																"platform": "OSX"
 														},
 														"caption": "Key Bindings – Default"
 													},
-													{
-														"command": "open_file",
-														"args": {
-																"file": "${packages}/Markdown Table Formatter/Default (Linux).sublime-keymap",
-																"platform": "Linux"
-														},
-														"caption": "Key Bindings – Default"
-													},
-													{
-														"command": "open_file",
-														"args": {
-																"file": "${packages}/Markdown Table Formatter/Default (Windows).sublime-keymap",
-																"platform": "Windows"
-														},
-														"caption": "Key Bindings – Default"
-													},
+													// {
+													// 	"command": "open_file",
+													// 	"args": {
+													// 			"file": "${packages}/tableMD/Default (Linux).sublime-keymap",
+													// 			"platform": "Linux"
+													// 	},
+													// 	"caption": "Key Bindings – Default"
+													// },
+													// {
+													// 	"command": "open_file",
+													// 	"args": {
+													// 			"file": "${packages}/tableMD/Default (Windows).sublime-keymap",
+													// 			"platform": "Windows"
+													// 	},
+													// 	"caption": "Key Bindings – Default"
+													// },
 													{
 														"command": "open_file",
 														"args": {
@@ -65,22 +65,22 @@
 														},
 														"caption": "Key Bindings – User"
 													},
-													{
-														"command": "open_file",
-														"args": {
-																"file": "${packages}/User/Default (Linux).sublime-keymap",
-																"platform": "Linux"
-														},
-														"caption": "Key Bindings – User"
-													},
-													{
-														"command": "open_file",
-														"args": {
-																"file": "${packages}/User/Default (Windows).sublime-keymap",
-																"platform": "Windows"
-														},
-														"caption": "Key Bindings – User"
-													},
+													// {
+													// 	"command": "open_file",
+													// 	"args": {
+													// 			"file": "${packages}/User/Default (Linux).sublime-keymap",
+													// 			"platform": "Linux"
+													// 	},
+													// 	"caption": "Key Bindings – User"
+													// },
+													// {
+													// 	"command": "open_file",
+													// 	"args": {
+													// 			"file": "${packages}/User/Default (Windows).sublime-keymap",
+													// 			"platform": "Windows"
+													// 	},
+													// 	"caption": "Key Bindings – User"
+													// },
 													{ "caption": "-" }
 											]
 									}
