@@ -42,7 +42,7 @@ a|b
   2.3 `simple_markdown/table.py`
 3. Name Δ to `tableMD` to avoid conflict with simultaneously testing both versions; plus it's kinda nerdishly cool. Table + Markdown + M.D. (Doctor of Medicine). Plus, since it's been a long time since the original has received any love, if skill and passion rise to the level of voluteering to taking it to the next level, it may require updated branding.
 4. Shortcut Δ `Default (OSX).sublime-keymap`
-  4.1 remapped key bindings * ,
+  4.1 remapped key bindings back to original default * ,
   4.2 deleted key bindings for `Windows` and `Linux`
 5. Deleted
   5.1 `Default (Linux).sublime-keymap`, and
@@ -50,8 +50,7 @@ a|b
 
 * new shortcut key binding
 ```
-        // default "keys": ["ctrl+alt+shift+t"],
-        "keys": ["super+alt+'"],
+    "keys": ["ctrl+alt+shift+t"],
 ```
 
 # Markdown Table Formatter 1.0

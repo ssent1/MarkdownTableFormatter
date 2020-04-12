@@ -1,9 +1,11 @@
 [
+{
+    "keys": ["ctrl+alt+shift+t"],
+    "command": "tablemd_format",
+    "context": [
     {
-        "keys": ["super+alt+'"],
-        "command": "tablemd_format",
-        "context": [
-             {"key": "selector", "operator": "equal", "operand": "text.html.markdown"}
-        ]
-    }
-]
+        "key": "selector",
+        "operator": "equal",
+        "operand": "text.html.markdown"
+    }]
+}]
